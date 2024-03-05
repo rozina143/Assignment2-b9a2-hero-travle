@@ -1,0 +1,176 @@
+/* Common Style */
+.orange{
+    color: rgb(255, 84, 0);
+}
+.text{
+    color: rgb(255, 255, 255);
+}
+.little-text{
+    color: rgb(255, 255, 255);
+}
+/* Header */
+header{
+        padding: 30px 180px;
+}
+.div{
+    display: flex;
+    align-items: center;
+   
+}
+.div img{
+    width: 40px;
+    height: 56px;
+    margin-right: 10px;
+}
+nav{
+ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav > ul{
+    display: flex;
+}
+nav li{
+    list-style: none;
+    margin-right: 40px;
+}
+
+.icon{
+   display: none; 
+}
+/* header close */
+
+/* part 1 */
+.explore{
+     background-image:linear-gradient(to top, rgba(255,0,0,0), rgb(5, 0, 0)),url('Images/Group\ 13\ \(1\)\ \(1\).png');
+    background-repeat: no-repeat;
+    width: 1170px;
+    height: 550px;
+    margin: 50px auto;
+    border-radius: 15px;
+  
+}
+.explore-trip{
+text-align: center;
+ padding-top: 100px;
+}
+.text{
+    color: rgb(255, 255, 255);
+}
+.input{
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 700px;
+    height: 70px;
+    border-radius: 20px;
+  margin: auto;
+}
+.input li{
+    display: inline;
+margin-right: 15px;
+}
+input, button{
+    width: 130px;
+    height: 32px;
+    padding-left:8px ;
+    border-radius: 5px;
+    border: none;
+    margin-top: 15px;
+   
+    
+}
+.list{
+    position: relative;
+}
+
+#icon-content{
+position: absolute;
+right: 0;
+padding-right: 20px;
+top: 3px;
+}
+#btn{
+    position: absolute;
+    left: 0;
+    padding-top: 22px;
+padding-left: 15px;
+color: white;
+}
+button{
+    padding-left: 30px;
+    background-color:  rgb(255, 84, 0);
+    color: white;
+}
+
+
+
+
+/* small device */
+@media screen and (max-width:576px){
+    nav ul li {
+        display: none;
+    }
+    .input li,
+    .icon{
+        display: block;
+       
+    }
+    header{
+        padding: 0;
+
+    }
+    /* part 1 */
+ 
+.explore{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+  
+}
+.explore-trip{
+    padding-top: 30px;
+}
+.input{
+    width: 50%;
+    height: 300px;
+    margin: auto;
+    padding-left: 15px;
+}
+    
+#icon-content{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    }
+    #btn{
+        position: absolute;
+        left: 50px;
+        padding-top: 32px;
+    padding-left: 15px;
+    color: white;
+    }
+    input, button{
+        width: 200px;
+        height: 52px;
+    }
+
+}
+
+/* Medium Device */
+@media screen and (min-width:576px) and (max-width:992px){
+    nav{
+        display: block;
+    }
+    
+header{
+    padding: 0;
+}
+.div{
+    justify-content: center;
+}
+nav ul {
+    justify-content: center;
+}
+
+
+}
